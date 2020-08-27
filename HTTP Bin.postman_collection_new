@@ -1,0 +1,998 @@
+{
+	"info": {
+		"_postman_id": "d537c761-237b-45d2-a47e-31b4cd1680dd",
+		"name": "HTTP Bin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST httpbin",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/post?boby=the sponge",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "boby",
+							"value": "the sponge"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disallowed URL Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "126941df-bf2b-4695-8040-f88d44d769b2",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/anything",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"anything"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Non-JSON Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf67ecdd-7b51-4b2b-9db6-7889ec46791a",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"police\");",
+							"    pm.expect(pm.response.text()).to.include(\"department\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<user xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n\r\n  <firstName>sample string 2</firstName>\r\n\r\n  <lastName>sample string 3</lastName>\r\n\r\n  <ssoExternalId>sample string 4</ssoExternalId>\r\n\r\n  <email>sample string 5</email>\r\n\r\n  <jobTitle>sample string 6</jobTitle>\r\n\r\n  <defaultLanguage>English</defaultLanguage>\r\n  \r\n  <reference>sample string 1</reference>    \r\n\r\n</user>"
+				},
+				"url": {
+					"raw": "https://httpbin.org/delay/post?boob=the sponge",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"delay",
+						"post"
+					],
+					"query": [
+						{
+							"key": "boob",
+							"value": "the sponge"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Employee Record copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{api_dns_name}}/department/{{department}}/",
+							"protocol": "https",
+							"host": [
+								"{{api_dns_name}}"
+							],
+							"path": [
+								"department",
+								"{{department}}",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "api.vlab.f5demo.com",
+							"path": "/",
+							"secure": false,
+							"value": "01afb0dd2825aace57f1f36cdfcbd2a8c15532ca6f839ae478fb37b0ae60648d946d78699f00b66b7b85087b72ac20ee2086a8bf72",
+							"key": "TS015edd9e"
+						}
+					],
+					"body": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 11275017243445952551<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+				}
+			]
+		},
+		{
+			"name": "JSON Parsing Array Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2d3be480-4b0d-400f-be55-041b255477fc",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"police\");",
+							"    pm.expect(pm.response.text()).to.include(\"department\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"last_name\": \"{'a':['../../etc/passwd', 2,3]}\",\n    \"first_name\": \"test3\",\n    \"middle_initial\": \"{{mod_middle_initial}}\",\n    \"title\": \"{{mod_title}}\",\n    \"department\": \"{{department}}\",\n    \"salary\": {{mod_salary}}\n}"
+				},
+				"url": {
+					"raw": "https://httpbin.org/response-headers",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"response-headers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Employee Record copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{api_dns_name}}/department/{{department}}/",
+							"protocol": "https",
+							"host": [
+								"{{api_dns_name}}"
+							],
+							"path": [
+								"department",
+								"{{department}}",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "api.vlab.f5demo.com",
+							"path": "/",
+							"secure": false,
+							"value": "01afb0dd2825aace57f1f36cdfcbd2a8c15532ca6f839ae478fb37b0ae60648d946d78699f00b66b7b85087b72ac20ee2086a8bf72",
+							"key": "TS015edd9e"
+						}
+					],
+					"body": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 11275017243445952551<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+				}
+			]
+		},
+		{
+			"name": "Parameter Length&Signatures Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "27944bda-1d18-4881-a57a-d224f4f4803d",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"police\");",
+							"    pm.expect(pm.response.text()).to.include(\"department\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"last_name\": \"/../../../../../../../etc/passwd}\",\n    \"first_name\": \"test3\",\n    \"middle_initial\": \"{{mod_middle_initial}}\",\n    \"title\": \"{{mod_title}}\",\n    \"department\": \"{{department}}\",\n    \"salary\": {{mod_salary}}\n}"
+				},
+				"url": {
+					"raw": "https://httpbin.org/post?bob=the sponge",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "bob",
+							"value": "the sponge"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Employee Record copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{api_dns_name}}/department/{{department}}/",
+							"protocol": "https",
+							"host": [
+								"{{api_dns_name}}"
+							],
+							"path": [
+								"department",
+								"{{department}}",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "api.vlab.f5demo.com",
+							"path": "/",
+							"secure": false,
+							"value": "01afb0dd2825aace57f1f36cdfcbd2a8c15532ca6f839ae478fb37b0ae60648d946d78699f00b66b7b85087b72ac20ee2086a8bf72",
+							"key": "TS015edd9e"
+						}
+					],
+					"body": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 11275017243445952551<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+				}
+			]
+		},
+		{
+			"name": "Shellshock Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6be08bda-6e04-4402-879f-17a64abf0ab1",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"POLICE\");",
+							"    pm.expect(pm.response.text()).to.include(\"departments\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6IjQyODk0NmU3YWQ3ZGY1YWMzOTdiODdkNzhkYzc2ZWRkZDYyMDU1Y2U3MDQxM2Q5NmU4NzU2Y2YyYmQ2ODk2ZDkiLAogICJpYXQiOjE1OTcxMDI2OTEsCiAgImV4cCI6MTU5NzExNzA5MSwKICAibmJmIjoxNTk3MTAyMzkxCn0.LbXnlMhdd0TeXk4BKrg6rp54bpfqXdiiV3P2Q4yrYZ0",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "() { :;}; /bin/bash -c \"ls\""
+					}
+				],
+				"url": {
+					"raw": "https://httpbin.org/headers",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoS Copy",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSxociIsCiAgInVzZXIiOiJocnVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmhydXNlciIsCiAgImp0aSI6IjQ2MGU4MGU0ZmExNjY3OThmOTY4N2Y3YzU0ZjYyNjRjM2I5MTE2Nzg3NTVmYzI0Y2EwY2FiZDM4MjJkZThjMjUiLAogICJpYXQiOjE1OTgwMjQwNzgsCiAgImV4cCI6MTU5ODAzODQ3OCwKICAibmJmIjoxNTk4MDIzNzc4Cn0.H4sPBdm_zBNrB7iZam64eau8h5yy0Co7se6bl1NCYb8",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/headers",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET status 404",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6IjY0MjNmMzJiZTcyMDdlMTJmYWRjZDFiNDRmMmM2NDRiZDBjZDJjOWY3YWFiZTViYWJjZDA5YzgzNDk4M2NmMTQiLAogICJpYXQiOjE1OTcwNjU3NDMsCiAgImV4cCI6MTU5NzA4MDE0MywKICAibmJmIjoxNTk3MDY1NDQzCn0.Tlg3YB-cat9E0ycdhmzp2HQyVKoOj04Wm1XVpM4AqO8",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/status/404",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"status",
+						"404"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Headers",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6ImNjODg2YzYyODkxZTdhODUwZGI0NTNmOTY2NWM5YzA5NzEyZTViZGZhYWMzNGFjMjhkMGQ5ZDVmOGYzOGM4ODkiLAogICJpYXQiOjE1OTcxMDQyMTgsCiAgImV4cCI6MTU5NzExODYxOCwKICAibmJmIjoxNTk3MTAzOTE4Cn0.NmPxQ-zmUiqbLOIBoc1QCTXL7PIKX-gRL2VCTJ8HaEw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/headers",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Httpbin attack <script>",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ewogICJhbGciOiJIUzI1NiIsCiAgImtpZCI6ImFkbWluIgp9.ewogICJ0b2tlbl90eXBlIjoiQmVhcmVyIiwKICAiaXNzIjoiaHR0cHM6Ly9hcy5mNWRlbW8uY29tIiwKICAiYXVkIjpbCiAgICAiaHR0cHM6Ly9odHRwYmluLm9yZyIKICBdLAogICJncm91cHMiOiJlbXBsb3llZSIsCiAgInVzZXIiOiJlbXBsb3llZXVzZXIiLAogICJzdWIiOiIvQ29tbW9uL2RlbW8zLmVtcGxveWVldXNlciIsCiAgImp0aSI6IjQyODk0NmU3YWQ3ZGY1YWMzOTdiODdkNzhkYzc2ZWRkZDYyMDU1Y2U3MDQxM2Q5NmU4NzU2Y2YyYmQ2ODk2ZDkiLAogICJpYXQiOjE1OTcxMDI2OTEsCiAgImV4cCI6MTU5NzExNzA5MSwKICAibmJmIjoxNTk3MTAyMzkxCn0.LbXnlMhdd0TeXk4BKrg6rp54bpfqXdiiV3P2Q4yrYZ0",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/post?bob=<script>",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "bob",
+							"value": "<script>"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
